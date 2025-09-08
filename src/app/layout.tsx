@@ -1,3 +1,4 @@
+import { Header } from "@/components";
 import "./globals.css";
 
 export default function RootLayout({
@@ -9,7 +10,10 @@ export default function RootLayout({
     <html lang="en">
       <body
       >
+        <Header/>
+        <main className="w-screen mt-[70px]">
         {children}
+        </main>
       </body>
     </html>
   );

@@ -1,10 +1,12 @@
 @import url('//fonts.googleapis.com/earlyaccess/notosanskr.css');
 @import "tailwindcss";
 
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
   --font-sans: 'Noto Sans KR', Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
 }
 
 @theme inline {

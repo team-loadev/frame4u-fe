@@ -1,6 +1,7 @@
 export const colors = {
   gray: {
     100: "#FFFFFF",
+    150: "#FCFCFC",
     200: "#F9F9F9",
     300: "#E9E9E9",
     400: "#D1D1D1",
@@ -10,5 +11,5 @@ export const colors = {
     800: "#0F0F0F",
     900: "#000000",
   },
-  error : "#FF3333"
-}
+  error: "#FF3333",
+} as const;
