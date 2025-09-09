@@ -38,9 +38,12 @@ export default function Login () {
             <Inputs onChange={handleIdChange} value={datas.id} label="ID" placeholder="Enter your ID"/>
             <Inputs onChange={handlePwdChange} value={datas.password} label="password" placeholder="Enter your password"/>
           </div>
-          <div className="flex gap-3 items-center">
-            <Button onClick={() => router.back()} backgroundColor={colors.gray[100]} color={colors.gray[900]} hoverBackgroundColor={colors.gray[200]}>Back</Button>
-            <Button onClick={handleLoginClick}>Continue</Button>
+          <div className="flex w-full justify-between">
+            <Button onClick={() => router.push('/signup')} backgroundColor={colors.gray[100]} borderColor={colors.gray[400]} color={colors.gray[900]} hoverBackgroundColor={colors.gray[200]} isRound>sign up</Button>
+            <div className="flex gap-3 items-center">
+              <Button onClick={() => router.back()} backgroundColor={colors.gray[100]} color={colors.gray[900]} hoverBackgroundColor={colors.gray[200]}>Back</Button>
+              <Button onClick={handleLoginClick}>Continue</Button>
+            </div>
           </div>
         </div>
       </div>

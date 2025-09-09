@@ -1,10 +1,10 @@
 'use client'
-import React from 'react';
+import React, { ReactNode } from 'react';
 import { colors } from '../design-token';
 
 interface IButtonType {
   onClick: () => void;
-  children: string;
+  children: ReactNode;
   isRound?: boolean;
   backgroundColor?: string;
   hoverBackgroundColor?: string;
@@ -27,7 +27,7 @@ function Button({
   return (
     <button
       onClick={onClick}
-      className={`cursor-pointer ${paddingClass} ${radiusClass} transition-colors duration-500 flex items-center justify-center`}
+      className={`cursor-pointer ${paddingClass} ${radiusClass} transition-colors duration-500 flex items-center justify-center gap-[10px]`}
       style={{
         backgroundColor,
         color,

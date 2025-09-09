@@ -74,9 +74,12 @@ export default function Signup () {
             <Inputs onChange={handlePwdChange} value={password.password} label="password" placeholder="Enter your password"/>
             <Inputs onChange={handlePwdCheckChange} value={password.passwordCheck} label="password check" placeholder="Confirm your password"/>
           </div>
-          <div className="flex gap-3 items-center">
-            <Button onClick={() => router.back()} backgroundColor={colors.gray[100]} color={colors.gray[900]} hoverBackgroundColor={colors.gray[200]}>Back</Button>
-            <Button onClick={handleSignupClick}>Continue</Button>
+          <div className="flex w-full justify-between">
+            <Button onClick={() => router.push('/login')} backgroundColor={colors.gray[100]} borderColor={colors.gray[400]} color={colors.gray[900]} hoverBackgroundColor={colors.gray[200]} isRound>log in</Button>
+            <div className="flex gap-3 items-center">
+              <Button onClick={() => router.back()} backgroundColor={colors.gray[100]} color={colors.gray[900]} hoverBackgroundColor={colors.gray[200]}>Back</Button>
+              <Button onClick={handleSignupClick}>Continue</Button>
+            </div>
           </div>
         </div>
       </div>
