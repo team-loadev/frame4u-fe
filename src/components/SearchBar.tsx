@@ -3,7 +3,7 @@ import React from "react";
 
 interface ISearchBarType {
   value: string;
-  onChange: () => void;
+  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
   onKeyUp?: () => void
 }
 
